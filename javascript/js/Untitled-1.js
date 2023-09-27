@@ -15,3 +15,4 @@
   function desligar(){
     document.getElementById("lampada").src = "img/apagada.jpeg";
   }
+ 
