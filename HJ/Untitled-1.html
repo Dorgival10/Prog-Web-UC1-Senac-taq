@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMCt</title>
+</head>
+<body>
+    <p id="txt"></p>
+    <form>
+        <label>PESO :</label>
+        <input type="number " id="PESO" value="0"><br><br>
+        <label>ALTURA:</label>
+        <label></label>
+        <input type="number " id="ALTURA" value="0">
+    </form><br>
+    <button onclick="calcular()">IMC</button>
+    
+</body>
+<SCript>
+     function calcular(){
+        var PESO = Number(document.getElementById("PESO").value); 
+        var ALTURA = Number(document.getElementById("ALTURA").value); 
+
+        var IMC = PESO / (ALTURA*ALTURA) ;
+        document.getElementById("txt").innerHTML = "O IMC É: " + IMC;
+    }
+</SCript>
+</html>
