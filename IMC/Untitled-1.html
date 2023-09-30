@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMC</title>
+</head>
+<body>
+    
+    <p id="txt"></p>
+    <form>
+        <label>INFORME  SEU  PESO :</label>
+        <input type="number " id="PESO" value="0"><br><br>
+        <label>INFORME SUA ALTURA:</label>
+        <label></label>
+        <input type="number " id="ALTURA" value="0">
+    </form><br>
+    <button onclick="calcular()">CALCULAR</button>
+    <p id="msg"></p>
+    
+</body>
+<script>
+     function calcular(){
+        var PESO = Number(document.getElementById("PESO").value); 
+        var ALTURA = Number(document.getElementById("ALTURA").value); 
+        
+        var imc = PESO / (ALTURA*ALTURA) ;
+        var mensagem = document.getElementById("msg");
+        document.getElementById("txt").innerHTML = "SEU INDICE DE MASSA CORPORAL É: " + imc.toFixed(2);
+
+        if(imc < 18.5){
+            mensagem.innerHTML = "abaixo do peso !!";
+        }
+        else if(imc >= 18.5 && imc <= 24.9){
+            mensagem.innerHTML = "peso ideal";   
+        }
+        else if(imc > 24.9 && imc <= 29.9){
+            mensagem.innerHTML = "levemente acima do peso";   
+        }
+        else if(imc > 29.9 && imc <= 34.9){
+            mensagem.innerHTML = "obesidade grau 1";   
+        }
+        else if(imc > 34.9 && imc <= 39.9){
+            mensagem.innerHTML = "obesidade grau 2";   
+        }
+        else {
+            mensagem.innerHTML = "obesidade grau 3";   
+        }
+        
+    }
+    
+</script>
+</html>
