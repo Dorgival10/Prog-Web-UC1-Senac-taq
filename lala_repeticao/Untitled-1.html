@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lacos de repetiçao</title>
+</head>
+<body style="background-color: aquamarine; text-align: center;">
+    <input type="number" id="numero" value="10">
+    <button onclick="calcular()">calcular</button>
+    <h2>tabuada de 1 a 10</h2>
+    <p id="tabu"></p>
+    
+    <h2 style="background-color: rgb(18, 18, 20); color: blueviolet;">Laço FOR</h2>
+    <p id="txt"></p>
+
+    <h2 style="background-color: rgb(18, 18, 20); color: blueviolet;">Laço while</h2>
+    <p id="demo"></p>
+
+    <h2 style="background-color: rgb(18, 18, 20); color: blueviolet;">Tabuada</h2>
+    <P id="tab"></P>
+
+    <h2 style="background-color: rgb(18, 18, 20); color: blueviolet;">Contagem de 1 a 200 </h2>
+    <p id="duz"></p>
+
+</body>
+<script>
+    function calcular(){
+
+     var num=Number(document.getElementById("numero").value);   
+    //Tabuada 8
+    var texto = "";
+    for (let i=0; i <=10; i++){
+        texto = texto + num+ "* "+i+" = " +num*i+"<br>";
+    }
+    document.getElementById("tab").innerHTML = texto
+}
+
+
+
+    //laço for
+    var texto =""
+    for(var cont =1; cont <= 5; cont++){
+        texto += "o numero é : "+cont+"<br>"   
+    }
+    document.getElementById("txt").innerHTML = texto;
+
+    //Laço while
+    let text = "";
+    let contador =1;
+    let tamanho =10;
+    while (contador <= tamanho){
+        text = text + "<br> o numero é " +contador;
+        contador++;
+    }
+    document.getElementById("demo").innerHTML = text;
+
+
+
+    //contagem de 1 a 200
+   var textos =""
+   for( var com =1; com <=200; com++){
+    textos += " , "+com;
+   }
+   document.getElementById("duz").innerHTML = textos ;
+   
+
+
+
+</script>
+</html>
