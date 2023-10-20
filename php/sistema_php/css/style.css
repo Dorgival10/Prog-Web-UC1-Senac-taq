@@ -1,6 +1,6 @@
 header{
     background-color: #4B6D90;
-    padding: 4%;
+    padding: 3%;
     color: rgb(236, 238, 240);
     text-align: center;
 }
@@ -8,7 +8,14 @@ header{
     margin-left: 5% !important;
     margin-right: 5% !important;
     justify-content: center !important;
+    margin-top: 8% !important;
 }
 .div-item{
     text-align: center !important;
+}
+footer{
+    background-color: #4B6D90 !important;
+    text-align: center !important;
+    color: white !important;
+    padding: 1% !important;
 }
