@@ -1,0 +1,14 @@
+header{
+    background-color: #4B6D90;
+    padding: 4%;
+    color: rgb(236, 238, 240);
+    text-align: center;
+}
+.sec-conteudo{
+    margin-left: 5% !important;
+    margin-right: 5% !important;
+    justify-content: center !important;
+}
+.div-item{
+    text-align: center !important;
+}
