@@ -1,24 +1,29 @@
 header{
-    background-color: #4B6D90;
-    padding: 3%;
-    color: rgb(236, 238, 240);
-    text-align: center;
+    background-color: #4B6D90 !important;
+    padding: 3% !important;
+    color: white !important;
+    text-align: center !important;    
 }
+
 .sec-conteudo{
     margin-left: 5% !important;
     margin-right: 5% !important;
+    margin-bottom: 11% !important;
+    margin-top: 9% !important;
     justify-content: center !important;
-    margin-top: 8% !important;
 }
+
 .div-item{
-    text-align: center !important;
+    text-align: center;
 }
+
 footer{
     background-color: #4B6D90 !important;
     text-align: center !important;
     color: white !important;
-    padding: 1% !important;
+    padding: 2% !important;
 }
+
 .img-react{
     width: 80% !important;
 }
