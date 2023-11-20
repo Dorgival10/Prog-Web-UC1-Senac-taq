@@ -1,0 +1,20 @@
+.cabecalho{
+    background-color: red;
+    padding: 2em;
+    text-align: center;
+    color: white;
+}
+.titulo-principal{
+    display: flex;
+    gap: 30%;
+    justify-content: center;
+    text-align: center;
+}
+.botao{
+    border-radius: 30%;
+    margin: 3px;
+}
+.tabela{
+    margin: 10px;
+    padding-top: 5px;
+}
